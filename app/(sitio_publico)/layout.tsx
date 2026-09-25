@@ -30,13 +30,13 @@ export default function RootLayout({
 
               {/* Menú de Navegación */}
               <nav className="flex space-x-6">
-                <Link href="/sobre-nosotros" className="hover:text-gray-400 transition-colors">
+                <Link href="/sobre_nosotros" className="hover:text-gray-400 transition-colors">
                   Sobre Nosotros
                 </Link>
                 <Link href="/proyectos" className="hover:text-gray-400 transition-colors">
                   Proyectos
                 </Link>
-                <Link href="/trabaja-con-nosotros" className="hover:text-gray-400 transition-colors">
+                <Link href="/trabaja_con_nosotros" className="hover:text-gray-400 transition-colors">
                   Trabaja con Nosotros
                 </Link>
               </nav>
