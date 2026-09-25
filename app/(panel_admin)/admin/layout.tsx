@@ -40,19 +40,11 @@ export default function DashboardLayout({
             </Link>
 
             <Link
-              href="/admin/liquidaciones"
+              href="/admin/finiquito_liquidaciones"
               className="flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-medium hover:bg-gray-800 text-gray-300 hover:text-white transition-colors"
             >
               <Calculator className="w-5 h-5 text-gray-400" />
-              <span>Cálculo de Liquidaciones</span>
-            </Link>
-
-            <Link
-              href="/admin/finiquito"
-              className="flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-medium hover:bg-gray-800 text-gray-300 hover:text-white transition-colors"
-            >
-              <FileText className="w-5 h-5 text-gray-400" />
-              <span>Cálculo de Finiquito</span>
+              <span>Cálculo de Liquidaciones y Finiquitos</span>
             </Link>
 
             <Link
@@ -118,7 +110,7 @@ export default function DashboardLayout({
           </main>
 
           {/* 3. LISTADO LATERAL DERECHO DE NOTIFICACIONES */}
-          <aside className="w-80 bg-gray-300 rounded-xl shadow-sm border border-gray-400 p-5 flex flex-col flex-shrink-0 overflow-y-auto">
+          <aside className="w-50 bg-gray-300 rounded-xl shadow-sm border border-gray-400 p-4 flex flex-col flex-shrink-0 overflow-y-auto">
             <div className="flex items-center space-x-2 pb-4 border-b border-gray-400 mb-4">
               <Bell className="w-5 h-5 text-gray-700" />
               <h3 className="font-bold text-gray-800">Notificaciones</h3>
