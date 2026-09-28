@@ -38,3 +38,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 librerias de uso
 
 npm install lucide-reactS
+npm install @supabase/supabase-js @supabase/ssr
