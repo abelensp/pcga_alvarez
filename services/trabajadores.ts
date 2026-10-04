@@ -13,7 +13,7 @@ export async function obtenerTrabajadores(): Promise<TrabajadorDB[]> {
   return data || [];
 }
 
-export async function crearTrabajador(trabajador: Omit<TrabajadorDB, 'id'>) {
+export async function crearTrabajador(trabajador: Omit<TrabajadorDB, 'id' | 'created_at'>) {
   const { data, error } = await supabase
     .from('trabajadores')
     .insert([trabajador])
