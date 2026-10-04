@@ -25,3 +25,16 @@ export interface TrabajadorDB {
   estado?: string;
   created_at?: string;
 }
+
+export type EstadoFaena = 'EN_EJECUCION' | 'FINALIZADA' | 'SUSPENDIDA';
+
+export interface FaenaDB {
+  id: number;
+  nombre_faena: string;
+  mandante?: string;
+  codigo_centro_costo?: string;
+  ubicacion: string;
+  fecha_inicio: string; // Formato YYYY-MM-DD
+  estado?: EstadoFaena;
+  created_at?: string;
+}
